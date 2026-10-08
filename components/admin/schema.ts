@@ -129,7 +129,12 @@ export const sectionSchemas: Record<SectionType, Field[]> = {
     { type: "text", key: "label", label: "Título pequeno" },
     { type: "text", key: "address", label: "Endereço" },
     { type: "text", key: "city", label: "Cidade" },
-    { type: "text", key: "mapQuery", label: "Endereço para o mapa", help: "Texto pesquisado no Google Maps para exibir o mapa." },
+    {
+      type: "text",
+      key: "mapQuery",
+      label: "Ponto no mapa",
+      help: "Endereço ou coordenadas pesquisados no Google Maps. Para marcar o ponto exato do plantão, use latitude e longitude (ex.: -23.1234,-48.9876).",
+    },
     button("primaryButton", "Botão principal"),
     button("secondaryButton", "Botão secundário"),
   ],
